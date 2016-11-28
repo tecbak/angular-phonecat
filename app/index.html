@@ -5,24 +5,27 @@
     <title>Phone gallery</title>
     <script src="bower_components/angular/angular.js"></script>
     <script src="app.js"></script>
+    <script src="phone-list.component.js"></script>
 </head>
 <body ng-controller="PhoneListController">
-<ul>
-    <li ng-repeat="phone in phones">
-        <span>{{phone.name}}</span>
-        <p>{{phone.snippet}}</p>
-    </li>
-</ul>
-<p ng-repeat="i in [0,1,2,3,4,5,6,7,8,9]">
-    {{i}}
-</p>
 
-<table>
-    <tr ng-repeat="i in [0,1,2,3,4,5,6,7,8,9]">
-        <td ng-repeat="j in [0,1,2,3,4,5,6,7,8,9]">
-            {{i+j}}
-        </td>
-    </tr>
-</table>
+<phone-list></phone-list>
+<!--<ul>-->
+    <!--<li ng-repeat="phone in phones">-->
+        <!--<span>{{phone.name}}</span>-->
+        <!--<p>{{phone.snippet}}</p>-->
+    <!--</li>-->
+<!--</ul>-->
+<!--<p ng-repeat="i in [0,1,2,3,4,5,6,7,8,9]">-->
+    <!--{{i}}-->
+<!--</p>-->
+
+<!--<table>-->
+    <!--<tr ng-repeat="i in [0,1,2,3,4,5,6,7,8,9]">-->
+        <!--<td ng-repeat="j in [0,1,2,3,4,5,6,7,8,9]">-->
+            <!--{{i+j}}-->
+        <!--</td>-->
+    <!--</tr>-->
+<!--</table>-->
 </body>
 </html>

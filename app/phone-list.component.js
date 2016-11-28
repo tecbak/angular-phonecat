@@ -1,12 +1,4 @@
 angular.module('phonecatApp').component('phoneList', {
-    template: '<ul>',
-    controller: function PhoneListController() {
-
-    }
-});
-
-
-angular.module('phonecatApp').component('phoneList', {
     template: '<ul>' +
     '<li ng-repeat="phone in $ctrl.phones">' +
     '<span>{{phone.name}}</span>' +
@@ -16,15 +8,37 @@ angular.module('phonecatApp').component('phoneList', {
     controller: function PhoneListController() {
         this.phones = [
             {
-                name: 'Nexus S',
-                snippet: 'Fast just got faster with Nexus S.'
-            }, {
-                name: 'Motorola XOOM™ with Wi-Fi',
-                snippet: 'The Next, Next Generation tablet.'
-            }, {
-                name: 'MOTOROLA XOOM™',
-                snippet: 'The Next, Next Generation tablet.'
+                name: 'Nexus',
+                snippet: 'An android smartphone'
+            },
+            {
+                name: 'iPhone 7',
+                snippet: 'Apple smartphone'
             }
         ];
     }
 });
+
+//
+// angular.module('phonecatApp').component('phoneList', {
+//     template: '<ul>' +
+//     '<li ng-repeat="phone in $ctrl.phones">' +
+//     '<span>{{phone.name}}</span>' +
+//     '<p>{{phone.snippet}}</p>' +
+//     '</li>' +
+//     '</ul>',
+//     controller: function PhoneListController() {
+//         this.phones = [
+//             {
+//                 name: 'Nexus S',
+//                 snippet: 'Fast just got faster with Nexus S.'
+//             }, {
+//                 name: 'Motorola XOOM™ with Wi-Fi',
+//                 snippet: 'The Next, Next Generation tablet.'
+//             }, {
+//                 name: 'MOTOROLA XOOM™',
+//                 snippet: 'The Next, Next Generation tablet.'
+//             }
+//         ];
+//     }
+// });
