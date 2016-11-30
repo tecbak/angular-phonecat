@@ -2,19 +2,38 @@
     <div class="row">
         <div class="col-md-2">
 
-            Search: <input ng-model="$ctrl.query"/>
+            <p>
+                <label>
+                    Search:
+                    <input ng-model="$ctrl.query"/>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Order by:
+                    <select ng-model="$ctrl.orderProp">
+                        <option value="name">Alphabetical</option>
+                        <option value="age">Newest</option>
+                        <option value="-age">Oldest</option>
+                    </select>
+                </label>
+            </p>
 
         </div>
         <div class="col-md-10">
 
             <ul class="phones">
-                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query">
-                    <span>{{phone.name}}</span>
+                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+                    <a href="#/phones/{{phone.id}}" class="thumb">
+                        <img src="{{phone.imageUrl}}"/>
+                    </a>
+                    <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
                     <p>{{phone.snippet}}</p>
                 </li>
             </ul>
 
         </div>
     </div>
-    <div class="col-md-12">{{$ctrl.query}}</div>
+    <!--<div class="col-md-12">{{$ctrl.query}}</div>-->
 </div>

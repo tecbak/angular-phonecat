@@ -1,0 +1,23 @@
+[
+  {
+    "id": "nexus",
+    "name": "Nexus",
+    "imageUrl": "img/phones/nexus.jpg",
+    "snippet": "An android smartphone",
+    "age": 1
+  },
+  {
+    "id": "iphone-7",
+    "name": "iPhone 7",
+    "imageUrl": "img/phones/iphone7.jpg",
+    "snippet": "Apple smartphone",
+    "age": 2
+  },
+  {
+    "id": "xiaomi-redmi-note-3-pro",
+    "name": "Xiaomi Redmi Note 3 Pro",
+    "imageUrl": "img/phones/xiaomi-redmi-note-3-pro.jpg",
+    "snippet": "Smartphone from China",
+    "age": 3
+  }
+]
